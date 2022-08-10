@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+class Navbar extends React.Component {
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    render() {
+        return <div>
+            <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
+                <a className="navbar-brand" href="#">SP <span>Consultancy</span></a>
+                <div className="ml-auto">
+             
+                    <ul className="navbar-nav">
+                      
+                        <li className="nav-list"><a className="nav-link">Home</a></li>
+                        <li className="nav-list"><a className="nav-link">About US</a></li>
+                        <li className="nav-list"><a className="nav-link">Services</a></li>
+                        <li className="nav-list"><a className="nav-link">Contact US</a></li>
+                    </ul>
+                    
+                </div>
+            </nav>
+        </div>
+    }
 }
-
-export default App;
+export default Navbar
