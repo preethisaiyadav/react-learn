@@ -1,11 +1,11 @@
-import react from "react"
-class test extends react.Component{
-    render(){
-        return(
-            <div>
-                <h2>Name:{this.props.name} And age:{this.props.age}</h2>
-            </div>
-        )
-    }
+import React, { Component } from 'react'
+
+export class test extends Component {
+  render() {
+    return (
+      <div>test</div>
+    )
+  }
 }
+
 export default test
