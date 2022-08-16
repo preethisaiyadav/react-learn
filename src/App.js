@@ -1,12 +1,18 @@
-import React ,{useState}from 'react'
+import React from 'react'
+/* import Message from './Message/Message' */
+import Navbar from './Navbar/Navbar'
 
-export const App = () => {
-    const [name,setName]=useState('leo')
-  return (
-    <div>
-        <h1>name:{name}</h1>
-    </div>
-  )
+import Counter from './Counter/Counter'
+class App extends React.Component {
+    render() {
+        return <div>
+            <Navbar />
+            <h1>my product</h1>
+            <hr />
+
+            
+            {<Counter /> }
+        </div>
+    }
 }
 export default App
-
