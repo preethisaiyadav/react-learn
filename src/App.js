@@ -1,17 +1,17 @@
 import React from 'react'
 /* import Message from './Message/Message' */
 import Navbar from './Navbar/Navbar'
-
+import Employee from './Employee/Employee'
 import Counter from './Counter/Counter'
 class App extends React.Component {
     render() {
         return <div>
             <Navbar />
-            <h1>my product</h1>
+            <h1>Employee Component</h1>
             <hr />
 
-            
-            {<Counter /> }
+            <Employee />
+            {/* <Counter /> */}
         </div>
     }
 }
