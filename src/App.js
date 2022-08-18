@@ -1,35 +1,24 @@
-import React  ,{useState} from 'react'
- const App =()=>{
-    const [Data,setData]=useState({
-        email:'',
-        password:''
+import React from 'react'
+import Navbar from './Navbar/Navbar'
+import Salary from './FormEx/Eventhandling/Salary'
+import Login from './FormEx/Login'
+import Employee from './Empolyee/Employee'
 
-    })
-const changeHandler =e=>{
-    setData({...Data,[e.target.name]:e.target.value})
 
+ class App extends React.Component  {
+  render(){
+  return (
+    <div>
+         <Navbar/>
+   <h1>Login Details</h1>
+   <hr/> 
+     <Login/>
+     <Salary/>
+      <Employee/>
+
+    </div>
+   
+  )
+  }
 }
-const submitHandler=e=>{
-    e.preventDefault();   
-    if(Data.password.length<5){
-        alert('provide password length>5')
-    }
-    else{
-        console.log(Data);
-    }
-}
-    return(
-        
-        <div style={{display:"flex" ,justifyContent:"center"}}>
-        <form onSubmit={submitHandler}>
-                <label>E-mail : </label>
-                <input type="text"name="email"/> <br/>
-                <label>Password :</label> 
-                <input type="password"name="password"/> <br/>
-                    <input type="submit"value="login"/> 
-                
-            </form>
-        </div>
-    )
- }
- export default App
+export default App
