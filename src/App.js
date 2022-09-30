@@ -1,21 +1,11 @@
-import React, { Component } from 'react'
-import Navbar from './Navbar/Navbar'
+import React from 'react'
+import Etracker from './Etracker/Etracker';
 
-import ContactApp from './ContactApp/ContactApp'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-class App extends Component {
-    render() {
-        return <React.Fragment>
-            <Router>
-                <Navbar />
-                <Routes>
-                    <Route path="/contacts" element={<ContactApp />} />
-                    
-                </Routes>
-            </Router>
-        </React.Fragment>
-    }
+   const App = () => {
+  return (
+    <div>
+      <Etracker/>
+    </div>
+  )
 }
-
-export default App
-
+export default App;

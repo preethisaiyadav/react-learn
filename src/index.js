@@ -1,5 +1,12 @@
-import ReactDOM from 'react-dom'
-import App from './App'
-//import '../node_modules/bootstrap/dist/css/bootstrap.css'
-//ReactDOM.render("Hello,GM", document.getElementById('root'));
-ReactDOM.render(<App />, document.getElementById('root'));
+import ReactDom from 'react-dom'
+import './index.css';
+import App from './App';
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import{BrowserRouter}from'react-router-dom';
+ 
+ReactDom.render(
+  <BrowserRouter>
+  <App/>
+  </BrowserRouter>,
+  document.getElementById('root')  
+) ;
